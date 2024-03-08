@@ -1,0 +1,11 @@
+<div class="flex w-full h-auto border-b-2 border-black headerBackground snap-start" [class]="headerBackground">
+    <div class="flex flex-col w-5/6 p-2">
+        <div class="mb-2"><h1 class="font-bold text-2xl" [class]="textColorBlack">B&W Photography</h1></div>
+        <div class=""><app-section></app-section> </div>
+    </div>
+    <div class="flex flex-col items-center justify-center w-1/6 p-4">
+            <button class="bg-white border-2 border-black rounded-lg text-center w-32 m-2 text-black"  (click)="changeColor('white')">Black & White</button>
+            <button class="bg-amber-600/50 border-2 border-black rounded-lg text-center w-32 m-2 text-black" (click)="changeColor('sepia')">Sepia</button>
+            <button class="bg-gradient-to-r from-red-500/50 from-20% via-green-500/50 via-50% to-blue-500/50 to-80%  rounded-lg text-center w-32 m-2" (click)="changeColor('color')" [class]="textColorWhite">Color</button>
+    </div>
+</div>
